@@ -1,0 +1,577 @@
+@charset "UTF-8";
+.header {
+  background-color: #000;
+  padding: 50px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.menu li:hover {
+  color: #ffdd57;
+}
+.menu li.active {
+  color: #a8933e;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* --- Кнопка бургера --- */
+.burger-btn {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.burger-btn span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #d4af37;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.burger-btn span:nth-child(1) {
+  top: 0;
+}
+
+.burger-btn span:nth-child(2) {
+  top: 8px;
+}
+
+.burger-btn span:nth-child(3) {
+  top: 16px;
+}
+
+/* --- Анимация при открытии --- */
+.burger-btn.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.burger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-btn.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+/* --- Меню (react-burger-menu стилизация) --- */
+.menuBlock {
+  background: #0d1117 !important;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.menu-item {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 2rem 0;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #d4af37;
+}
+
+/* --- Затемнение фона при открытии меню --- */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.burger-container {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 200;
+  /* поверх всего */
+}
+
+.burger-btn {
+  z-index: 300;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+body {
+  background-color: #0d1117;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.home {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.block__text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block__description {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #c0c0c0;
+  max-width: 60rem;
+}
+
+.block__btn {
+  padding: 10px 20px;
+  background-color: #ffdd57;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.block__btn:hover {
+  background-color: #e6c84f;
+}
+
+.block__square {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: auto;
+  width: 120rem;
+  padding: 1rem;
+  background-color: #151b25;
+  border-radius: 2rem;
+}
+
+/* общие параметры квадратов */
+.square {
+  background-color: #64a4e4;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+}
+
+.square:hover {
+  box-shadow: #151b25 2px 4px 20px;
+  transform: scale(1.02);
+  z-index: 10;
+  background-color: #7ab8f0;
+  /* лёгкий подсвет */
+}
+
+/* отдельные размеры */
+.square__one {
+  height: 50rem;
+  width: 36rem;
+}
+
+.square__two {
+  height: 50rem;
+  width: 81rem;
+}
+
+.square__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.square__four,
+.square__five,
+.square__six {
+  height: 30rem;
+  width: 38rem;
+  background-color: #64a4e4;
+  border-radius: 0.5rem;
+}
+
+.block__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffdd57;
+}
+
+/* --- Планшеты (до 1024px) --- */
+@media (max-width: 1024px) {
+  .square__one,
+  .square__two {
+    width: 100%;
+    height: 40rem;
+  }
+  .square__four,
+  .square__five,
+  .square__six {
+    width: 31%;
+    height: 25rem;
+  }
+  .block__square {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}
+/* --- Мобильные (до 768px) --- */
+@media (max-width: 768px) {
+  .block__description {
+    font-size: 1.3rem;
+    max-width: 90%;
+  }
+  .square__one,
+  .square__two {
+    width: 100%;
+    height: 24rem;
+  }
+  .square__four,
+  .square__five,
+  .square__six {
+    width: 31%;
+    height: 25rem;
+  }
+  .block__square {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 70%;
+  }
+  .block__title {
+    font-size: 2.2rem;
+  }
+}
+/* --- Очень маленькие экраны (до 480px) --- */
+@media (max-width: 480px) {
+  .home {
+    margin: 6rem 0;
+  }
+  .block__btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+  .square__one,
+  .square__two,
+  .square__four,
+  .square__five,
+  .square__six {
+    height: 20rem;
+  }
+  .block__title {
+    font-size: 2rem;
+  }
+}
+.product-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 250px;
+  color: #f0f0f0;
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card__img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.product-card__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.product-card__price {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.product-card__btn {
+  background-color: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  font-size: 1.3rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.product-card__btn:hover {
+  background-color: #d4af37;
+  color: #1a1a1a;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.shop__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+  padding: 100px 0;
+  position: relative;
+}
+
+.bin {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+}
+.bin:hover {
+  transform: scale(1.1);
+}
+
+.shop__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #d4af37;
+  text-align: center;
+}
+
+.container__aboutus {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  color: #f3f3f3;
+  background-color: #121212;
+  line-height: 1.7;
+}
+
+.aboutus {
+  margin-bottom: 10rem;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.aboutus h1,
+.aboutus h2 {
+  color: #d4af37;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.aboutus h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.aboutus h2 {
+  font-size: 2rem;
+}
+
+.aboutus p {
+  font-size: 1.6rem;
+  color: #d8d8d8;
+}
+
+/* 🔥 Плавное появление снизу */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer {
+  background-color: #000;
+  color: #d4af37;
+  padding: 5rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Верхний текст --- */
+.footer__brand h2 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer__brand p {
+  color: #aaa;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Ссылки --- */
+.footer__links {
+  margin-bottom: 3rem;
+}
+
+.footer__links a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #fff;
+}
+
+/* --- Нижняя часть --- */
+.footer__copy {
+  border-top: 1px solid #222;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.footer__copy span {
+  color: #d4af37;
+  font-weight: 500;
+}
+
+/* --- Адаптив --- */
+@media (max-width: 600px) {
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer__brand h2 {
+    font-size: 2rem;
+  }
+}
+:root {
+  --color-dark: #121212;
+  --color-light: #ffffff;
+  --color-gold: #d4af37;
+  --color-gray: #a5a5a5;
+  --text-color: var(--color-light);
+  --background-color: var(--color-dark);
+  --max-width: 120rem;
+  /* 1200px */
+  --header-height: 7rem;
+  --border-radius: 1.2rem;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto-Italic.ttf") format("truetype-variations");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

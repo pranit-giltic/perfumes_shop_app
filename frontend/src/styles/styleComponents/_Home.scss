@@ -1,0 +1,191 @@
+body {
+    background-color: #0d1117;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.home{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.home__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.block__text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.block__description{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #c0c0c0;
+    max-width: 60rem;
+}
+
+.block__btn{
+    padding: 10px 20px;
+    background-color: #ffdd57;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover{
+        background-color: #e6c84f;
+    }
+}
+
+.block__square {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: auto;
+    width: 120rem;
+    padding: 1rem;
+    background-color: #151b25;
+    border-radius: 2rem;
+}
+
+/* общие параметры квадратов */
+.square {
+    background-color: #64a4e4;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.square:hover {
+    box-shadow: #151b25 2px 4px 20px;
+    transform: scale(1.02);
+    z-index: 10;
+    background-color: #7ab8f0;
+    /* лёгкий подсвет */
+}
+
+/* отдельные размеры */
+.square__one {
+    height: 50rem;
+    width: 36rem;
+}
+
+.square__two {
+    height: 50rem;
+    width: 81rem;
+}
+
+
+
+
+
+.square__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.square__four,
+.square__five,
+.square__six {
+    height: 30rem;
+    width: 38rem;
+    background-color: #64a4e4;
+    border-radius: 0.5rem;
+}
+
+.block__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffdd57;
+}
+
+
+
+/* --- Планшеты (до 1024px) --- */
+@media (max-width: 1024px) {
+  .square__one,
+  .square__two {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .square__four,
+  .square__five,
+  .square__six {
+    width: 31%;
+    height: 25rem;
+  }
+
+  .block__square {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}
+
+/* --- Мобильные (до 768px) --- */
+@media (max-width: 768px) {
+  .block__description {
+    font-size: 1.3rem;
+    max-width: 90%;
+  }
+
+  .square__one,
+  .square__two {
+    width: 100%;
+    height: 24rem;
+  }
+        .square__four,
+        .square__five,
+        .square__six {
+            width: 31%;
+            height: 25rem;
+        }
+
+  .block__square {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 70%;
+  }
+
+  .block__title {
+    font-size: 2.2rem;
+  }
+}
+
+/* --- Очень маленькие экраны (до 480px) --- */
+@media (max-width: 480px) {
+  .home {
+    margin: 6rem 0;
+  }
+
+  .block__btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .square__one,
+  .square__two,
+  .square__four,
+  .square__five,
+  .square__six {
+    height: 20rem;
+  }
+
+  .block__title {
+    font-size: 2rem;
+  }
+}
