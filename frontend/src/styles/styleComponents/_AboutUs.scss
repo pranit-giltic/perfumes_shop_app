@@ -1,0 +1,55 @@
+.container__aboutus {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    color: #f3f3f3;
+    background-color: #121212;
+    line-height: 1.7;
+}
+
+.aboutus {
+    margin-bottom: 10rem;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease-out forwards;
+}
+
+.aboutus h1,
+.aboutus h2 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.aboutus h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.aboutus h2 {
+    font-size: 2rem;
+}
+
+.aboutus p {
+    font-size: 1.6rem;
+    color: #d8d8d8;
+}
+
+/* 🔥 Плавное появление снизу */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
