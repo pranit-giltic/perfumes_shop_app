@@ -121,8 +121,8 @@ cd server
 npm install
 node server.js
 ```
-Frontend → http://localhost:3001
-Backend → http://localhost:5000
+## Frontend → http://localhost:3001
+## Backend → http://localhost:5000
 ---
 
 ## 📸 Screenshots
