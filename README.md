@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.png" alt="Perfumes Shop App Banner" width="100%" />
+  <img src="./assets/HomePage.png" alt="Perfumes Shop App Banner" width="100%" />
   
   <h1>🌷 Perfumes Shop App</h1>
   <p><strong>Luxury fragrances for every soul ✨</strong></p>
