@@ -139,7 +139,7 @@ node server.js
 
 ---
 ## 🧑‍💻 Author
-Developed by Viktor Starodubcev
-Frontend Developer passionate about clean UI, structured architecture, and modern React ecosystems.
+## Developed by Viktor Starodubcev
+## Frontend Developer passionate about clean UI, structured architecture, and modern React ecosystems.
 
 ⭐ If you like this project, give it a star on GitHub!
