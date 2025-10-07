@@ -137,18 +137,6 @@ Backend → http://localhost:5000
 
 > 🖼️ Screenshots are stored in the `assets/` folder inside the project root.
 
----## 📸 Screenshots
-
-| 🏠 Home | 🛍️ Shop |
-|:--:|:--:|
-| ![Home Page](./assets/HomePage.png) | ![Shop Page](./assets/ShopPage.png) |
-
-| 🧾 About Us | 🧺 Bin |
-|:--:|:--:|
-| ![About Us Page](./assets/AboutUsPage.png) | ![Bin Page](./assets/BinPage.png) |
-
-> 🖼️ Screenshots are stored in the `assets/` folder inside the project root.
-
 ---
 ## 🧑‍💻 Author
 Developed by Viktor Starodubcev
